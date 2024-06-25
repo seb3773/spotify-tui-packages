@@ -13,8 +13,9 @@ download appropriate package for your architecture, and do (for example for 32bi
 sudo apt install ./spotify-tui-0.25.0_i386.deb
 ```
 (or install with graphical .deb installer if you have one, for example QSI installer for q4os: left click the .deb, then 'open with' and choose QSI installer)  
+  The package takes care of creating the corresponding '.desktop' entry (so you will have access to spotify-tui from your menu).
+I created a small script to launch spotify-tui when invoked from menu, so it opens in a konsole windows almost as large as your screen resolution. The reason behind that, besides the fact it is more convenient, is that I discovered the playlists windows is 'truncated' if the windows is too small at start, it doesn't display all the playlists and no way to have more than the few displayed. (need to open an issue for that in the spotify-tui owner's github)  
   
-
 * There are great chances you want to listen to music locally, so you will have to install too the 'spotifyd' package, you can found it here along with instructions to configure it:
  https://github.com/seb3773/spotify-qt-spotifyd-packages  
   
