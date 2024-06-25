@@ -15,7 +15,7 @@ sudo apt install ./spotify-tui-0.25.0_i386.deb
 (or install with graphical .deb installer if you have one, for example QSI installer for q4os: left click the .deb, then 'open with' and choose QSI installer)  
   
 
-* There are great chances you want to listen music locally, so you will have to install too the 'spotifyd' package, you can found it here along with instructions to configure it:
+* There are great chances you want to listen to music locally, so you will have to install too the 'spotifyd' package, you can found it here along with instructions to configure it:
  https://github.com/seb3773/spotify-qt-spotifyd-packages  
   
   
