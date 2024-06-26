@@ -18,7 +18,7 @@ sudo apt install ./spotify-tui-0.25.0_i386.deb
 ```
 (or install with graphical .deb installer if you have one, for example QSI installer for q4os: left click the .deb, then 'open with' and choose QSI installer)  
   
-The package takes care of creating the corresponding '.desktop' entry (so you will have access to spotify-tui from your menu).  
+The package takes care of creating the corresponding '.desktop' entry (so you will have access to spotify-tui from your applications menu).  
 There's a postinstall script that configure this .desktop file to set the size of the konsole windows that will be used to display spotify-tui almost as large as your screen resolution. The reason behind that, besides the fact it is more convenient, is that I discovered the playlists windows is 'truncated' if the windows is too small at start, it doesn't display all the playlists (I have a lot) and no way to have more than the few displayed. (need to open an issue for that in the spotify-tui owner's github).  
 Of course, you can edit this desktop file ( /usr/share/applications/spotify-tui.desktop ) to modify or remove the geometry argument.  
   
