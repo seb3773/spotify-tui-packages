@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Post install script is running now"
+geo=$(xrandr | awk '/\*/ {split($1, res, "x"); printf("%dx%d+50+10\n", res[1]-100, res[2]-100); exit}')
+desktop_file="/usr/share/applications/spotify-tui.desktop"
+sed -i "s|^Exec=.*|Exec=konsole -T spotify-tui --nomenubar --notabbar --noscrollbar --miniicon spt --caption \"\" --icon spt --geometry $geo -e spt|" "$desktop_file"
+echo "Done."
