@@ -5,9 +5,11 @@ Debian bookworm packages for spotify-tui : spotify client for the terminal writt
 I builded these packages because they are not in debian 12 repository.  
 x64,i386 & armhf packages provided.  
   
-I slighty modified the source script in order to launch spotifyd (if it is installed) when the application start, and terminate it when the application exit.
+.modifications:
+- I slighty modified the source script in order to launch spotifyd (if it is installed) when the application start, and terminate it when the application exit.
 It's convenient if, like me you don't want spotifyd to run when not needed. (this way it is more like spotify-qt behavior who can launch spotifyd at start and terminate it when exiting.)
 (you can check the modified main.rs file in /src folder)
+- ssl lib statically linked (it needs 1.1.0 version which is not present on bookworm)
   
 # installation:  
   
